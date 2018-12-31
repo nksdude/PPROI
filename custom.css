@@ -2428,7 +2428,7 @@ a:hover, a:active, a:focus {
 
 /*changed*/
 .btn-primary {
-  background-color: #00acd8;
+  background-color: @pproi-yellow;
   border-color: #007a99;
 }
 
