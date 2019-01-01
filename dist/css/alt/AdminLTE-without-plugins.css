@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*!
  *   AdminLTE v2.4.0 Without Third-Party Plugins
  *   Author: Almsaeed Studio
@@ -18,8 +19,8 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -1545,13 +1546,13 @@ a:focus {
   border-top-color: #ff3636;
 }
 .box.box-warning {
-  border-top-color: #f39c12;
+  border-top-color: #f07e28;
 }
 .box.box-success {
-  border-top-color: #00a65a;
+  border-top-color: #6baa19;
 }
 .box.box-default {
-  border-top-color: #d2d6de;
+  border-top-color: #878787;
 }
 .box.collapsed-box .box-body,
 .box.collapsed-box .box-footer {
@@ -1645,12 +1646,12 @@ a:focus {
   color: #ffffff;
 }
 .box.box-solid.box-success {
-  border: 1px solid #00a65a;
+  border: 1px solid #6baa19;
 }
 .box.box-solid.box-success > .box-header {
   color: #ffffff;
-  background: #00a65a;
-  background-color: #00a65a;
+  background: #6baa19;
+  background-color: #6baa19;
 }
 .box.box-solid.box-success > .box-header a,
 .box.box-solid.box-success > .box-header .btn {
@@ -1756,7 +1757,7 @@ a:focus {
   left: auto;
 }
 .box-header > .box-tools .dropdown-menu > li > a {
-  color: #444!important;
+  color: #444 !important;
 }
 .btn-box-tool {
   padding: 5px;
@@ -2232,17 +2233,17 @@ a:focus {
 .btn-default.hover {
   color: #ffffff;
   background-color: #3d3d3c;
-  border-color: #878787;
+  border-color: #3d3d3c;
 }
 .btn-default:focus {
   color: #ffffff;
   background-color: #4a4a49;
-  border-color: #878787;
+  border-color: #4a4a49;
 }
 .btn-default:active:focus {
   color: #ffffff;
   background-color: #3d3d3c;
-  border-color: #878787;
+  border-color: #3d3d3c;
 }
 .btn-primary {
   background-color: #00acd8;
@@ -2252,7 +2253,7 @@ a:focus {
 .btn-primary:active,
 .btn-primary.hover {
   background-color: #0098bf;
-  border-color: #00acd8;
+  border-color: #0098bf;
 }
 .btn-primary:focus {
   background-color: #00acd8;
@@ -2270,15 +2271,15 @@ a:focus {
 .btn-success:active,
 .btn-success.hover {
   background-color: #779c45;
-  border-color: #66873b;
+  border-color: #779c45;
 }
 .btn-success:focus {
   background-color: #84ae4d;
-  border-color: #66873b;
+  border-color: #6baa19;
 }
 .btn-success:active:focus {
   background-color: #84ae4d;
-  border-color: #66873b;
+  border-color: #6baa19;
 }
 .btn-info {
   background-color: #aeaeae;
@@ -2289,7 +2290,7 @@ a:focus {
 .btn-info:active,
 .btn-info.hover {
   background-color: #a1a1a1;
-  border-color: #878787;
+  border-color: #a1a1a1;
 }
 .btn-info:focus {
   background-color: #aeaeae;
@@ -2301,13 +2302,13 @@ a:focus {
 }
 .btn-danger {
   background-color: #ff5050;
-  border-color: #ff3636;
+  border-color: #ff5050;
 }
 .btn-danger:hover,
 .btn-danger:active,
 .btn-danger.hover {
   background-color: #ff4545;
-  border-color: #ff3636;
+  border-color: #ff4545;
 }
 .btn-danger:focus {
   background-color: #ff3b3b;
@@ -2319,13 +2320,13 @@ a:focus {
 }
 .btn-warning {
   background-color: #f07e28;
-  border-color: #ee7011;
+  border-color: #f07e28;
 }
 .btn-warning:hover,
 .btn-warning:active,
 .btn-warning.hover {
   background-color: #f18736;
-  border-color: #f07e28;
+  border-color: #f18736;
 }
 .btn-warning:focus {
   background-color: #f0812d;
@@ -2707,16 +2708,25 @@ a:focus {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #4a4a49;
+  background-color: #656565;
+  color: #ffffff;
+  /* &:hover, &:active, &.hover {
+                  color: @pproi-white;
+                  background-color: @pproi-aqua;
+                  border-color: darken(@pproi-darkest-grey, 5%);
+                }
+        */
 }
 .table > thead > tr > th {
-  border-bottom: 2px solid #f4f4f4;
+  background-color: #4a4a49;
+  color: #00acd8;
 }
 .table tr td .progress {
   margin-top: 5px;
 }
 .table-bordered {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #4a4a49;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2724,7 +2734,7 @@ a:focus {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #4a4a49;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2935,22 +2945,22 @@ table.text-center th {
   border-left-color: #ff3636;
 }
 .direct-chat-primary .right > .direct-chat-text {
-  background: #3c8dbc;
-  border-color: #3c8dbc;
+  background: #5b94be;
+  border-color: #5b94be;
   color: #ffffff;
 }
 .direct-chat-primary .right > .direct-chat-text:after,
 .direct-chat-primary .right > .direct-chat-text:before {
-  border-left-color: #3c8dbc;
+  border-left-color: #5b94be;
 }
 .direct-chat-warning .right > .direct-chat-text {
-  background: #f39c12;
-  border-color: #f39c12;
+  background: #e4c442;
+  border-color: #e4c442;
   color: #ffffff;
 }
 .direct-chat-warning .right > .direct-chat-text:after,
 .direct-chat-warning .right > .direct-chat-text:before {
-  border-left-color: #f39c12;
+  border-left-color: #e4c442;
 }
 .direct-chat-info .right > .direct-chat-text {
   background: #00acd8;
@@ -2962,13 +2972,13 @@ table.text-center th {
   border-left-color: #00acd8;
 }
 .direct-chat-success .right > .direct-chat-text {
-  background: #00a65a;
-  border-color: #00a65a;
+  background: #6baa19;
+  border-color: #6baa19;
   color: #ffffff;
 }
 .direct-chat-success .right > .direct-chat-text:after,
 .direct-chat-success .right > .direct-chat-text:before {
-  border-left-color: #00a65a;
+  border-left-color: #6baa19;
 }
 /*
  * Component: Users List
@@ -3548,7 +3558,7 @@ table.text-center th {
 .alert-warning,
 .label-warning,
 .modal-warning .modal-body {
-  background-color: #f39c12 !important;
+  background-color: #e4c442 !important;
 }
 .bg-aqua,
 .callout.callout-info,
@@ -3558,34 +3568,34 @@ table.text-center th {
   background-color: #00acd8 !important;
 }
 .bg-blue {
-  background-color: #0073b7 !important;
+  background-color: #337ab7 !important;
 }
 .bg-light-blue,
 .label-primary,
 .modal-primary .modal-body {
-  background-color: #3c8dbc !important;
+  background-color: #5b94be !important;
 }
 .bg-green,
 .callout.callout-success,
 .alert-success,
 .label-success,
 .modal-success .modal-body {
-  background-color: #00a65a !important;
+  background-color: #6baa19 !important;
 }
 .bg-navy {
   background-color: #001f3f !important;
 }
 .bg-teal {
-  background-color: #39cccc !important;
+  background-color: #008e87 !important;
 }
 .bg-olive {
-  background-color: #3d9970 !important;
+  background-color: #84ae4d !important;
 }
 .bg-lime {
   background-color: #01ff70 !important;
 }
 .bg-orange {
-  background-color: #ff851b !important;
+  background-color: #f07e28 !important;
 }
 .bg-fuchsia {
   background-color: #f012be !important;
@@ -3778,12 +3788,7 @@ table.text-center th {
   color: #fff;
 }
 .bg-light-blue-gradient {
-  background: #3c8dbc !important;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3c8dbc), color-stop(1, #67a8ce)) !important;
-  background: -ms-linear-gradient(bottom, #3c8dbc, #67a8ce) !important;
-  background: -moz-linear-gradient(center bottom, #3c8dbc 0%, #67a8ce 100%) !important;
-  background: -o-linear-gradient(#67a8ce, #3c8dbc) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a8ce', endColorstr='#3c8dbc', GradientType=0) !important;
+  background-color: #5b94be;
   color: #fff;
 }
 .bg-blue-gradient {
@@ -3796,12 +3801,7 @@ table.text-center th {
   color: #fff;
 }
 .bg-aqua-gradient {
-  background: #00acd8 !important;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00acd8), color-stop(1, #00c8fc)) !important;
-  background: -ms-linear-gradient(bottom, #00acd8, #00c8fc) !important;
-  background: -moz-linear-gradient(center bottom, #00acd8 0%, #00c8fc 100%) !important;
-  background: -o-linear-gradient(#00c8fc, #00acd8) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c8fc', endColorstr='#00acd8', GradientType=0) !important;
+  background-color: #00acd8;
   color: #fff;
 }
 .bg-yellow-gradient {

@@ -2,17 +2,20 @@
  * Core: General Layout Style
  * -------------------------
  */
-html,
-body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
   height: 100%;
+
   .layout-boxed & {
     height: 100%;
   }
+
 }
 
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -24,6 +27,7 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+
   .layout-boxed & {
     max-width: 1250px;
     margin: 0 auto;
@@ -31,6 +35,7 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     position: relative;
   }
+
 }
 
 .layout-boxed {
@@ -40,36 +45,41 @@ body {
 /*
  * Content Wrapper - contains the main content
  */
-.content-wrapper,
-.main-footer {
+.content-wrapper, .main-footer {
   // Using disposable variable to join statements with a comma
-  @transition-rule: @transition-speed @transition-fn,
-  margin @transition-speed @transition-fn;
+  @transition-rule: @transition-speed @transition-fn, margin @transition-speed @transition-fn;
   .transition-transform(@transition-rule);
   margin-left: @sidebar-width;
   z-index: 820;
+
   // Top nav layout
   .layout-top-nav & {
     margin-left: 0;
   }
-  @media (max-width: @screen-xs-max) {
+
+  @media (max-width:@screen-xs-max) {
     margin-left: 0;
   }
+
   // When opening the sidebar on large screens
   .sidebar-collapse & {
-    @media (min-width: @screen-sm) {
+    @media (min-width:@screen-sm) {
       margin-left: 0;
     }
+
   }
+
   // When opening the sidebar on small screens
   .sidebar-open & {
-    @media (max-width: @screen-xs-max) {
+    @media (max-width:@screen-xs-max) {
       .translate(@sidebar-width, 0);
     }
+
   }
+
 }
 
-.content-wrapper  {
+.content-wrapper {
   min-height: 100%;
   background-color: @body-bg;
   z-index: 800;
@@ -84,45 +94,45 @@ body {
 
 /* Fixed layout */
 .fixed {
-  .main-header,
-  .main-sidebar,
-  .left-side {
+  .main-header, .main-sidebar, .left-side {
     position: fixed;
   }
+
   .main-header {
     top: 0;
     right: 0;
     left: 0;
   }
-  .content-wrapper,
-  .right-side {
+
+  .content-wrapper, .right-side {
     padding-top: 50px;
-    @media (max-width: @screen-header-collapse) {
+
+    @media (max-width:@screen-header-collapse) {
       padding-top: 100px;
     }
+
   }
+
   &.layout-boxed {
     .wrapper {
       max-width: 100%;
     }
+
   }
+
   .wrapper {
     overflow: hidden;
   }
+
 }
 
 .hold-transition {
-  .content-wrapper,
-  .right-side,
-  .main-footer,
-  .main-sidebar,
-  .left-side,
-  .main-header .navbar,
-  .main-header .logo,
-  .menu-open .fa-angle-left {
+  .content-wrapper, .right-side, .main-footer, .main-sidebar, .left-side, .main-header .navbar, .main-header .logo, .menu-open .fa-angle-left {
+
     /* Fix for IE */
     .transition(none);
   }
+
 }
 
 /* Content */
@@ -133,18 +143,7 @@ body {
 }
 
 /* H1 - H6 font */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -153,9 +152,7 @@ a {
   color: @link-color;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
   color: @link-hover-color;
@@ -171,4 +168,5 @@ a:focus {
     display: block;
     margin-top: 5px;
   }
+
 }

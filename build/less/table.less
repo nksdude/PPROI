@@ -2,56 +2,66 @@
  * Component: Table
  * ----------------
  */
-
 .table {
   //Cells
-  > thead,
-  > tbody,
-  > tfoot {
+  > thead, > tbody, > tfoot {
     > tr {
-      > th,
-      > td {
-        border-top: 1px solid @box-border-color;
+      > th, > td {
+        border-top: 1px solid @pproi-darkest-grey;
+        background-color: @pproi-table-color;
+        color: @pproi-white;       /* &:hover, &:active, &.hover {
+                  color: @pproi-white;
+                  background-color: @pproi-aqua;
+                  border-color: darken(@pproi-darkest-grey, 5%);
+                }
+        */
       }
+
     }
+
   }
+
   //thead cells
   > thead > tr > th {
-    border-bottom: 2px solid @box-border-color;
+    background-color: @pproi-darkest-grey;
+    color: @pproi-aqua;
   }
+
   //progress bars in tables
   tr td .progress {
     margin-top: 5px;
   }
+
 }
 
 //Bordered Table
 .table-bordered {
-  border: 1px solid @box-border-color;
-  > thead,
-  > tbody,
-  > tfoot {
+  border: 1px solid @pproi-darkest-grey;
+
+  > thead, > tbody, > tfoot {
     > tr {
-      > th,
-      > td {
-        border: 1px solid @box-border-color;
+      > th, > td {
+        border: 1px solid @pproi-darkest-grey;
       }
+
     }
+
   }
+
   > thead > tr {
-    > th,
-    > td {
+    > th, > td {
       border-bottom-width: 2px;
     }
+
   }
+
 }
 
 .table.no-border {
-  &,
-  td,
-  th {
+  &, td, th {
     border: 0;
   }
+
 }
 
 /* .text-center in tables */
@@ -59,13 +69,16 @@ table.text-center {
   &, td, th {
     text-align: center;
   }
+
 }
 
 .table.align {
   th {
     text-align: left;
   }
+
   td {
     text-align: right;
   }
+
 }
