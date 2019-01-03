@@ -88,7 +88,7 @@ body {
 }
 .content-wrapper {
   min-height: 100%;
-  background-color: #ecf0f5;
+  background-color: #4a4a49;
   z-index: 800;
 }
 .main-footer {
@@ -163,14 +163,14 @@ h6,
 }
 /* General Links */
 a {
-  color: #3c8dbc;
+  color: #ffffff;
 }
 a:hover,
 a:active,
 a:focus {
   outline: none;
   text-decoration: none;
-  color: #72afd2;
+  color: #ffffff;
 }
 /* Page Header */
 .page-header {
@@ -1530,8 +1530,8 @@ a:focus {
 .box {
   position: relative;
   border-radius: 0;
-  background: #ffffff;
-  border-top: 3px solid #d2d6de;
+  background: #656565;
+  border-top: 0 solid #d2d6de;
   margin-bottom: 20px;
   width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -2709,14 +2709,13 @@ a:focus {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   border-top: 1px solid #4a4a49;
-  background-color: #656565;
+  /*background-color: @pproi-table-color;*/
   color: #ffffff;
-  /* &:hover, &:active, &.hover {
-                  color: @pproi-white;
-                  background-color: @pproi-aqua;
-                  border-color: darken(@pproi-darkest-grey, 5%);
-                }
-        */
+  /*   &:hover, &:active, &.hover {
+                                                                  color: @pproi-white;
+                                                                  background-color: @pproi-aqua;
+                                                                  border-color: darken(@pproi-darkest-grey, 5%);
+                                                                }*/
 }
 .table > thead > tr > th {
   background-color: #4a4a49;
@@ -2756,6 +2755,9 @@ table.text-center th {
 }
 .table.align td {
   text-align: right;
+}
+.table-hover > tbody > tr:hover {
+  background-color: red;
 }
 /*
  * Component: Label
